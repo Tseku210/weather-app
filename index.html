@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div id="search">
+                <input type="text" id="search-city-input">
+                <button type="button" id="search-city-submit-btn">Search</button>
+            </div>
+            <div id="toggler">
+                <div class="toggleIcon celcius active">°C</div>
+                /
+                <div class="toggleIcon fahrenheit">°F</div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="loading"></div>
+            <img src="#" alt="" id="weather-icon">
+            <div class="right-side">
+                <div class="city-name">Ulaanbaatar</div>
+                <div class="temp">20</div>
+                <div class="other-info"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

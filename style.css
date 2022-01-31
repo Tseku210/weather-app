@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+}
+
+#toggler {
+    display: flex;
+    color: white;
+    gap: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.toggleIcon.active {
+    font-weight: bold;
+}
+
+#search-city-input {
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#search-city-input:focus {
+    outline: none;
+}
+
+#search-city-submit-btn {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#search-city-submit-btn:hover {
+    background-color: #dddddd;
+}
+
+#main {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#loading {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+    position: absolute;
+}
+
+#loading.display {
+    visibility: visible;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
