@@ -2,7 +2,7 @@ const citySubmitBtn = document.getElementById('search-city-submit-btn')
 const toggler = document.getElementById('toggler')
 
 async function getWeatherData(location) {
-    const weatherData = await (await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=91fbbfac43d30ca0935fb6f53c8d13b9`)).json()
+    const weatherData = await (await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=91fbbfac43d30ca0935fb6f53c8d13b9`)).json()
     console.log(weatherData)
     if (weatherData.cod == "404") {
         throw new Error(weatherData.message)
